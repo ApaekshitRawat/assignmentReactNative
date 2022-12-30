@@ -1,13 +1,6 @@
 import React, { useState } from "react";
-import {
-  FlatList,
-  StyleSheet,
-  Text,
-  Touchable,
-  TouchableOpacity,
-  View,
-} from "react-native";
-
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+// Wanted to use Animation for this , but installing animated package was breaking the other configs and I couldn't find the solution for it :(
 export default function Cards({ item }) {
   const [currentIndex, setCurrentIndex] = React.useState(null);
   return (
@@ -41,7 +34,7 @@ const styles = StyleSheet.create({
     fontSize: 15,
     backgroundColor: "#fff",
     borderRadius: 10,
-    shadowOffset: { width: 5, height: 5 },
+    shadowOffset: { width: 8, height: 8 },
     shadowColor: "#333",
     shadowOpacity: 0.3,
   },
